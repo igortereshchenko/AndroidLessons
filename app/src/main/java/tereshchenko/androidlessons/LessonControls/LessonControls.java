@@ -62,4 +62,32 @@ public class LessonControls extends AppCompatActivity {
 
     }
 
+    public void btnToggleButton(View sender){
+        Intent intent = new Intent(this, ToggleButtonControl.class);
+        intent.putExtra(Lesson.LESSON_NAME,"ToggleButton");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"ToggleButton подобно элементу CheckBox может пребывать в двух состояниях: отмеченном и неотмеченном, причем для каждого состояния мы можем отдельно установить свой текст.");
+
+        startActivity(intent);
+
+    }
+
+    public void btnRadioButton(View sender){
+        Intent intent = new Intent(this, RadioButtonControl.class);
+        intent.putExtra(Lesson.LESSON_NAME,"RadioButton");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"Схожую с флажками функциональность предоставляют переключатели, которые представлены классом RadioButton. Но в отличие от флажков единовременно в группе переключателей мы можем выбрать только один переключатель. " +
+                "Чтобы создать список переключателей для выбора, вначале надо создать объект RadioGroup, который будет включать в себя все переключатели.");
+
+        startActivity(intent);
+
+    }
+
+    public void btnDatePicker(View sender){
+        Intent intent = new Intent(this, DatePickerControl.class);
+        intent.putExtra(Lesson.LESSON_NAME,"DatePicker");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"Он служит для выбора даты в приложении, в формате День - Месяц - Год.");
+
+        startActivity(intent);
+
+    }
+
 }

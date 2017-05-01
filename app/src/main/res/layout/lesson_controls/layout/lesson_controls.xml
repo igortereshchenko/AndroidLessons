@@ -43,6 +43,25 @@
             android:layout_height="wrap_content"
             android:onClick="btnCheckbox"/>
 
+
+        <Button
+            android:text="Открыть ToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnToggleButton"/>
+
+        <Button
+            android:text="Открыть RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnRadioButton"/>
+
+        <Button
+            android:text="Открыть DatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnDatePicker"/>
+
     </LinearLayout>
 
 </ScrollView>
