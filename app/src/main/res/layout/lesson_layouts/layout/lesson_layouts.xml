@@ -8,47 +8,33 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
-        <!-- Lesson1 -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LinearLayout"
-            android:textSize="34sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Контейнер LinearLayout представляет объект ViewGroup, который упорядочивает все дочерние элементы в одном направлении: по горизонтали или по вертикали."
-            android:textSize="14sp" />
+
         <Button
-            android:text="Открыть"
-            android:layout_width="wrap_content"
+            android:text="Открыть LinearLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="btnLinearLayout"/>
 
-        <!-- Lesson2 -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="RelativeLayout"
-            android:textSize="34sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO ."
-            android:textSize="14sp" />
         <Button
-            android:text="Открыть"
-            android:layout_width="wrap_content"
+            android:text="Открыть RelativeLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="btnRelativeLayout"/>
 
-
         <Button
-            android:text="К главному меню"
+            android:text="Открыть TableLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnBackToMain"
-            android:layout_marginTop="20dp"/>
+            android:onClick="btnTableLayout"/>
+
+
+
+
+        <Button
+            android:text="Открыть ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnScrollView"/>
 
     </LinearLayout>
 

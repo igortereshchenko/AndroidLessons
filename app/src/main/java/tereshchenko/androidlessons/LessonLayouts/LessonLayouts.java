@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import tereshchenko.androidlessons.Lesson;
+import tereshchenko.androidlessons.LessonControls.TextViewControl;
 import tereshchenko.androidlessons.MainActivity;
 import tereshchenko.androidlessons.R;
 
@@ -20,98 +22,55 @@ import tereshchenko.androidlessons.R;
 
 public class LessonLayouts  extends AppCompatActivity {
 
-    private final static String TAG = "LessonLayouts";
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.lesson_layouts);
-
-        Log.d(TAG, "onCreate");
     }
 
 
 
-    public void btnBackToMain(View sender){
-
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-        startActivity(intent);
-    }
-
-    public void  btnBack(View sender){
-        setContentView(R.layout.lesson_layouts);
-    }
-//----------------------------------------------------
-//LinearLayout
     public void btnLinearLayout(View sender){
 
-        setContentView(R.layout.lesson_layouts_linear);
-    }
+        Intent intent = new Intent(this, LinearLayoutLesson.class);
+        intent.putExtra(Lesson.LESSON_NAME,"LinearLayout");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"Контейнер LinearLayout представляет объект ViewGroup, который упорядочивает все дочерние элементы в одном направлении: по горизонтали или по вертикали.");
 
-    public void btnManualLinearLayout(View sender){
+        startActivity(intent);
 
-        LinearLayout linearLayout = new LinearLayout(this);
-        linearLayout.setOrientation(LinearLayout.VERTICAL);
-
-        TextView textView1 = new TextView(this);
-        textView1.setText("simple text");
-        textView1.setBackgroundColor(Color.CYAN);
-
-
-        linearLayout.addView(textView1, new LinearLayout.LayoutParams
-                (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
-
-        //----------------------------------------------------------
-
-        TextView textView2 = new TextView(this);
-        textView2.setText("Set margins and paddings");
-
-        LinearLayout.LayoutParams layoutParams =new LinearLayout.LayoutParams
-                (LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-
-
-
-        final float scale = getResources().getDisplayMetrics().density;
-        int size_5dp = (int) (5 * scale + 0.5f);
-        int size_20dp = (int) (20 * scale + 0.5f);
-
-
-        textView2.setPadding(size_5dp,size_5dp,size_20dp,size_20dp); //padding is element property
-
-        layoutParams.setMargins(size_20dp,size_20dp,size_20dp,size_20dp); //margins is layout property
-
-        textView2.setLayoutParams(layoutParams);
-
-
-        linearLayout.addView(textView2 );
-
-
-        //----------------------------------------------------------
-
-        Button btnBack = new Button(this);
-        btnBack.setText("Назад");
-        btnBack.setLayoutParams(layoutParams);
-
-
-        btnBack.setOnClickListener( new View.OnClickListener(){
-
-            public void onClick(View sender){
-                setContentView(R.layout.lesson_layouts_linear);
-            }
-
-        });
-        linearLayout.addView(btnBack);
-
-        setContentView(linearLayout);
     }
 
 
+    public void btnRelativeLayout(View sender){
+
+        Intent intent = new Intent(this, RelativeLayoutLesson.class);
+        intent.putExtra(Lesson.LESSON_NAME,"RelativeLayout");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"RelativeLayout представляет объект ViewGroup, который располагает дочерние элементы относительно позиции других дочерних элементов разметки или относительно области самой разметки RelativeLayout. Используя относительное позиционирование, мы можем установить элемент по правому краю или в центре или иным способом, который предоставляет данный контейнер.");
+
+        startActivity(intent);
+
+    }
+
+    public void btnTableLayout(View sender){
+
+        Intent intent = new Intent(this, TableLayoutLesson.class);
+        intent.putExtra(Lesson.LESSON_NAME,"TableLayout");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"Контейнер TableLayout структурирует элементы управления по столбцам и строкам.");
+
+        startActivity(intent);
+
+    }
 
 
-//----------------------------------------------------
-//RelativeLayout
+    public void btnScrollView(View sender){
 
+        Intent intent = new Intent(this, ScrollViewLesson.class);
+        intent.putExtra(Lesson.LESSON_NAME,"ScrollView");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"Контейнер ScrollView предназначен для создания прокрутки для такого интерфейса, все элементы которого одномоментно не могут поместиться на экране устройства. ScrollView может вмещать только один элемент, поэтому если мы хотим разместить несколько элементов, то их надо поместить в какой-нибудь контейнер.");
+
+        startActivity(intent);
+
+    }
 
 
 }

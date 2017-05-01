@@ -11,7 +11,7 @@ import tereshchenko.androidlessons.R;
 
 public class LessonControls extends AppCompatActivity {
 
-    private final static String TAG = "LessonControls";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
