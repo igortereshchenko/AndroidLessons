@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView android:id="@+id/txtCheckboxSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp" />
+
+    <CheckBox android:id="@+id/chbJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:textSize="26sp"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox android:id="@+id/chbJavascript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JavaScript"
+        android:textSize="26sp"
+        android:onClick="onCheckboxClicked"
+
+        android:button="@drawable/checkbox_selector"/>
+
+</LinearLayout>

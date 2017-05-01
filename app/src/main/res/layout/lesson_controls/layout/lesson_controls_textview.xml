@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+
+        android:text="text with font family and colors"
+        android:fontFamily="sans-serif"
+        android:textSize="26sp"
+        android:background="#ffebee"
+        android:textColor="#f44336" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+
+        android:text="all caps text"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:background="#ede7f6"
+        android:textColor="#7e57c2" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+
+        android:text="text alignment"
+        android:textAlignment="textEnd"
+        android:textSize="26sp"
+        android:background="#e8eaf6"
+        android:textColor="#5c6bc0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Посетите сайт https://google.com"
+        android:textSize="21sp"
+        android:autoLink="web|email" />
+
+</LinearLayout>

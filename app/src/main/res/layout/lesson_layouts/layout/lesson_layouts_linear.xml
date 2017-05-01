@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Fixed size"
+        android:layout_height="90dp"
+        android:layout_width="150dp"
+        android:textSize="26sp"
+        android:background="#e0e0e0" />
+
+    <TextView
+        android:text="Wrap content and match parent"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="26sp"
+        android:background="#eaeae0" />
+
+
+    <TextView android:text="Min mas width and height "
+
+        android:minWidth="200dp"
+        android:maxWidth="250dp"
+        android:minHeight="100dp"
+        android:maxHeight="200dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="26sp"
+        android:background="#ade0e0" />
+
+
+    <TextView
+        android:text="Set margins"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="26sp"
+        android:background="#aaa0e0"
+
+        android:layout_margin="20dp"/>
+
+
+    <TextView
+        android:text="Set margins and paddings"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="26sp"
+        android:background="#ccacec"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="30dp"/>
+
+    <Button
+        android:text="Генерировать в коде"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnManualLinearLayout"/>
+
+    <Button
+        android:text="Назад"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnBack"
+
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
