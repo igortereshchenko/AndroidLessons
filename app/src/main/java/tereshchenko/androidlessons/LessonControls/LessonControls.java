@@ -90,4 +90,14 @@ public class LessonControls extends AppCompatActivity {
 
     }
 
+
+    public void btnTimePicker(View sender){
+        Intent intent = new Intent(this, TimePickerControl.class);
+        intent.putExtra(Lesson.LESSON_NAME,"TimePicker");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"Компонент TimePicker позволяет пользователю выбрать время (часы, минуты). Данный виджет используют как правило на отдельном экране..");
+
+        startActivity(intent);
+
+    }
+
 }

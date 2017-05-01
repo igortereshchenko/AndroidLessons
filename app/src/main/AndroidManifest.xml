@@ -26,7 +26,8 @@
         <activity android:name=".LessonControls.CheckboxControl" />
         <activity android:name=".LessonControls.ToggleButtonControl" />
         <activity android:name=".LessonControls.RadioButtonControl" />
-        <activity android:name=".LessonControls.DatePickerControl"></activity>
+        <activity android:name=".LessonControls.DatePickerControl" />
+        <activity android:name=".LessonControls.TimePickerControl"></activity>
     </application>
 
 </manifest>

@@ -62,6 +62,11 @@
             android:layout_height="wrap_content"
             android:onClick="btnDatePicker"/>
 
+        <Button
+            android:text="Открыть TimePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnTimePicker"/>
     </LinearLayout>
 
 </ScrollView>
