@@ -27,8 +27,17 @@
             android:layout_height="wrap_content"
             android:onClick="btnTableLayout"/>
 
+        <Button
+            android:text="Открыть FrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnFrameLayout"/>
 
-
+        <Button
+            android:text="Открыть GridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnGridLayout"/>
 
         <Button
             android:text="Открыть ScrollView"

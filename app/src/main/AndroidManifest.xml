@@ -31,7 +31,9 @@
         <activity android:name=".LessonLayouts.LinearLayoutLesson" />
         <activity android:name=".LessonLayouts.RelativeLayoutLesson" />
         <activity android:name=".LessonLayouts.ScrollViewLesson" />
-        <activity android:name=".LessonLayouts.TableLayoutLesson"></activity>
+        <activity android:name=".LessonLayouts.TableLayoutLesson" />
+        <activity android:name=".LessonLayouts.FrameLayoutLesson" />
+        <activity android:name=".LessonLayouts.GridLayoutLesson"></activity>
     </application>
 
 </manifest>

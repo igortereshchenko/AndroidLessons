@@ -62,6 +62,26 @@ public class LessonLayouts  extends AppCompatActivity {
     }
 
 
+    public void btnFrameLayout(View sender){
+
+        Intent intent = new Intent(this, FrameLayoutLesson.class);
+        intent.putExtra(Lesson.LESSON_NAME,"FrameLayout");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"Контейнер FrameLayout предназначен для вывода на экран одного помещенного в него визуального элемента. Если же мы поместим несколько элементов, то они будут накладываться друг на друга.");
+
+        startActivity(intent);
+
+    }
+
+    public void btnGridLayout(View sender){
+
+        Intent intent = new Intent(this, GridLayoutLesson.class);
+        intent.putExtra(Lesson.LESSON_NAME,"GridLayout");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"GridLayout представляет еще один контейнер, который позволяет создавать табличные представления. GridLayout состоит из коллекции строк, каждая из которых состоит из отдельных ячеек.");
+
+        startActivity(intent);
+
+    }
+
     public void btnScrollView(View sender){
 
         Intent intent = new Intent(this, ScrollViewLesson.class);
