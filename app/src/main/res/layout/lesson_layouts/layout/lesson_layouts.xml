@@ -52,6 +52,13 @@
             android:onClick="btnConstraintLayout"/>
 
 
+        <Button
+            android:text="Динамическая загрузка шаблона"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnActivityLayoutLoading"/>
+
+
     </LinearLayout>
 
 </ScrollView>

@@ -101,4 +101,12 @@ public class LessonLayouts  extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void btnActivityLayoutLoading(View sender){
+
+        Intent intent = new Intent(this, LayoutLoading.class);
+
+        startActivity(intent);
+
+    }
 }

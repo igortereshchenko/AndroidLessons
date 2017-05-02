@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:text="LayoutInflater – это класс, который умеет из содержимого layout-файла создать View-элемент. Метод который это делает называется inflate."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rgLayouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton android:id="@+id/rbLayoutFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Загрузить первый шаблон"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/rbLayoutSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Загрузить второй шаблон"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <ScrollView
+        android:id="@+id/lessonOutput"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+
+        />
+</LinearLayout>

@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import tereshchenko.androidlessons.LessonActivity.ActivityCommunication.ActivityCommunication;
 import tereshchenko.androidlessons.LessonActivity.LessonActivity;
 import tereshchenko.androidlessons.LessonControls.LessonControls;
 import tereshchenko.androidlessons.LessonLayouts.LessonLayouts;
@@ -32,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LessonActivity.class);
         startActivity(intent);
     }
+
+    public void btnLessonActivityCommunication(View sender){
+        Intent intent = new Intent(this, ActivityCommunication.class);
+        startActivity(intent);
+    }
+
 
     public void btnLessonLayouts(View sender){
         Intent intent = new Intent(this, LessonLayouts.class);

@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LessonActivity.LessonActivity" />
+        <activity android:name=".LessonActivity.ActivityCommunication.ActivityCommunication"/>
+        <activity android:name=".LessonActivity.ActivityCommunication.Calculator"/>
         <activity android:name=".LessonLayouts.LessonLayouts" />
         <activity android:name=".LessonControls.LessonControls" />
         <activity android:name=".LessonControls.TextViewControl" />
@@ -34,7 +36,8 @@
         <activity android:name=".LessonLayouts.TableLayoutLesson" />
         <activity android:name=".LessonLayouts.FrameLayoutLesson" />
         <activity android:name=".LessonLayouts.GridLayoutLesson" />
-        <activity android:name=".LessonLayouts.ConstraintLayoutLesson"></activity>
+        <activity android:name=".LessonLayouts.ConstraintLayoutLesson" />
+        <activity android:name=".LessonLayouts.LayoutLoading"></activity>
     </application>
 
 </manifest>

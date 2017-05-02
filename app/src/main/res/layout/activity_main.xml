@@ -26,11 +26,26 @@
                 android:layout_height="wrap_content"
                 android:text="Ключевым компонентом для создания визуального интерфейса в приложении Android является activity (активность). Нередко activity ассоциируется с отдельным экраном или окном приложения, а переключение между окнами будет происходить как перемещение от одной activity к другой."
                 android:textSize="14sp" />
-            <Button
-                android:text="Открыть"
-                android:layout_width="wrap_content"
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="btnLessonActivity"/>
+                android:orientation="horizontal">
+
+                <Button
+                    android:text="Открыть"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnLessonActivity"/>
+
+                <Button
+                    android:text="Взаимодействие двух Activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnLessonActivityCommunication"/>
+
+            </LinearLayout>
+
 
 
             <!-- Урок 1. Layouts -->
