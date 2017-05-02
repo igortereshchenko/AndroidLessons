@@ -45,6 +45,13 @@
             android:layout_height="wrap_content"
             android:onClick="btnScrollView"/>
 
+        <Button
+            android:text="Открыть ConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnConstraintLayout"/>
+
+
     </LinearLayout>
 
 </ScrollView>

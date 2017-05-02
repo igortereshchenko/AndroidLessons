@@ -1,10 +1,14 @@
 package tereshchenko.androidlessons;
 
 import android.content.Intent;
+import android.support.constraint.ConstraintLayout;
+import android.support.constraint.ConstraintSet;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import tereshchenko.androidlessons.LessonActivity.LessonActivity;
 import tereshchenko.androidlessons.LessonControls.LessonControls;
@@ -18,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
 
     }
 

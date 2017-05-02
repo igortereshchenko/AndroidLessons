@@ -92,5 +92,13 @@ public class LessonLayouts  extends AppCompatActivity {
 
     }
 
+    public void btnConstraintLayout(View sender){
 
+        Intent intent = new Intent(this, ConstraintLayoutLesson.class);
+        intent.putExtra(Lesson.LESSON_NAME,"ConstraintLayout");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"ConstraintLayout представляет новый тип контейнеров, который является развитием RelativeLayout и позволяет создавать гибкие и масштабируемые интерфейсы.");
+
+        startActivity(intent);
+
+    }
 }

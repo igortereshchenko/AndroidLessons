@@ -33,7 +33,8 @@
         <activity android:name=".LessonLayouts.ScrollViewLesson" />
         <activity android:name=".LessonLayouts.TableLayoutLesson" />
         <activity android:name=".LessonLayouts.FrameLayoutLesson" />
-        <activity android:name=".LessonLayouts.GridLayoutLesson"></activity>
+        <activity android:name=".LessonLayouts.GridLayoutLesson" />
+        <activity android:name=".LessonLayouts.ConstraintLayoutLesson"></activity>
     </application>
 
 </manifest>
