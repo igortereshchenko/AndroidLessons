@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LessonActivity.LessonActivity" />
-        <activity android:name=".LessonActivity.ActivityCommunication.ActivityCommunication"/>
-        <activity android:name=".LessonActivity.ActivityCommunication.Calculator"/>
+        <activity android:name=".LessonActivity.ActivityCommunication.ActivityCommunication" />
+        <activity android:name=".LessonActivity.ActivityCommunication.Calculator" />
         <activity android:name=".LessonLayouts.LessonLayouts" />
         <activity android:name=".LessonControls.LessonControls" />
         <activity android:name=".LessonControls.TextViewControl" />
@@ -37,7 +37,11 @@
         <activity android:name=".LessonLayouts.FrameLayoutLesson" />
         <activity android:name=".LessonLayouts.GridLayoutLesson" />
         <activity android:name=".LessonLayouts.ConstraintLayoutLesson" />
-        <activity android:name=".LessonLayouts.LayoutLoading"></activity>
+        <activity android:name=".LessonLayouts.LayoutLoading" />
+        <activity android:name=".LessonResources.ResourceLesson" />
+        <activity android:name=".LessonControls.ImageViewControl" />
+        <activity android:name=".LessonLists.LessonLists" />
+        <activity android:name=".LessonLists.LessonArrayAdapter"></activity>
     </application>
 
 </manifest>

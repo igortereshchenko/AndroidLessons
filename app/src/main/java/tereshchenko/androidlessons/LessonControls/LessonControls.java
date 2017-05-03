@@ -94,7 +94,16 @@ public class LessonControls extends AppCompatActivity {
     public void btnTimePicker(View sender){
         Intent intent = new Intent(this, TimePickerControl.class);
         intent.putExtra(Lesson.LESSON_NAME,"TimePicker");
-        intent.putExtra(Lesson.LESSON_DESCRIPTION,"Компонент TimePicker позволяет пользователю выбрать время (часы, минуты). Данный виджет используют как правило на отдельном экране..");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"Компонент TimePicker позволяет пользователю выбрать время (часы, минуты). Данный виджет используют как правило на отдельном экране.");
+
+        startActivity(intent);
+
+    }
+
+    public void btnImageView(View sender){
+        Intent intent = new Intent(this, ImageViewControl.class);
+        intent.putExtra(Lesson.LESSON_NAME,"ImageView");
+        intent.putExtra(Lesson.LESSON_DESCRIPTION,"Для работы с изображениями в Android можно использовать различные элементы, но непосредственно для вывода изображений предназначен ImageView.");
 
         startActivity(intent);
 

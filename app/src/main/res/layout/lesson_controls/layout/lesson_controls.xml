@@ -67,6 +67,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="btnTimePicker"/>
+
+
+        <Button
+            android:text="Открыть ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnImageView"/>
     </LinearLayout>
 
 </ScrollView>

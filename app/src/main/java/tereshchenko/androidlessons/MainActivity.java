@@ -14,6 +14,8 @@ import tereshchenko.androidlessons.LessonActivity.ActivityCommunication.Activity
 import tereshchenko.androidlessons.LessonActivity.LessonActivity;
 import tereshchenko.androidlessons.LessonControls.LessonControls;
 import tereshchenko.androidlessons.LessonLayouts.LessonLayouts;
+import tereshchenko.androidlessons.LessonLists.LessonLists;
+import tereshchenko.androidlessons.LessonResources.ResourceLesson;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void btnLessonResources(View sender){
+        Intent intent = new Intent(this, ResourceLesson.class);
+        startActivity(intent);
+    }
+
+
     public void btnLessonLayouts(View sender){
         Intent intent = new Intent(this, LessonLayouts.class);
         startActivity(intent);
@@ -47,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnLessonControls(View sender){
         Intent intent = new Intent(this, LessonControls.class);
+        startActivity(intent);
+    }
+
+
+    public void btnLessonLists(View sender){
+        Intent intent = new Intent(this, LessonLists.class);
         startActivity(intent);
     }
 

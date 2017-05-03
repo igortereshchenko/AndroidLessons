@@ -47,12 +47,28 @@
             </LinearLayout>
 
 
-
-            <!-- Урок 1. Layouts -->
+            <!-- Урок 1. Ресурсы -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Урок 1. Layouts"
+                android:text="Урок 2. Ресурсы"
+                android:textSize="34sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ресурс в приложении Android представляет собой файл, например, файл разметки интерфейса или некоторое значение, например, простую строку. То есть ресурсы представляют собой и файлы разметки, и отдельные строки, и звуковые файлы, файлы изображений и т.д. Все ресурсы находятся в проекте в каталоге res."
+                android:textSize="14sp" />
+            <Button
+                android:text="Открыть"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnLessonResources"/>
+
+            <!-- Урок 2. Layouts -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Урок 2. Layouts"
                 android:textSize="34sp" />
             <TextView
                 android:layout_width="wrap_content"
@@ -65,11 +81,11 @@
                 android:layout_height="wrap_content"
                 android:onClick="btnLessonLayouts"/>
 
-            <!-- Урок 2. Controls -->
+            <!-- Урок 3. Controls -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Урок 2. Controls"
+                android:text="Урок 3. Controls"
                 android:textSize="34sp" />
             <TextView
                 android:layout_width="wrap_content"
@@ -81,6 +97,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="btnLessonControls"/>
+
+
+            <!-- Урок 4. Lists -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Урок 4. Адаптеры и списки"
+                android:textSize="34sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android представляет широкую палитру элементов,которые представляют списки. Все они является наследниками класса android.widget.AdapterView. Это такие виджеты как ListView, GridView, Spinner. Они могут выступать контейнерами для других элементов управления."
+                android:textSize="14sp" />
+            <Button
+                android:text="Открыть"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnLessonLists"/>
 
 
         </LinearLayout>
