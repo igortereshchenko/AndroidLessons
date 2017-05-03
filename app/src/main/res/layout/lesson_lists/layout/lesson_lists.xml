@@ -16,6 +16,11 @@
             android:layout_height="wrap_content"
             android:onClick="btnArrayAdapter"/>
 
+        <Button
+            android:text="Открыть Custom rrayAdapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnCustomArrayAdapter"/>
 
 
     </LinearLayout>

@@ -41,7 +41,8 @@
         <activity android:name=".LessonResources.ResourceLesson" />
         <activity android:name=".LessonControls.ImageViewControl" />
         <activity android:name=".LessonLists.LessonLists" />
-        <activity android:name=".LessonLists.LessonArrayAdapter"></activity>
+        <activity android:name=".LessonLists.LessonArrayAdapter" />
+        <activity android:name=".LessonLists.CustomArrayAdapter.LessonCutomArrayAdapter"></activity>
     </application>
 
 </manifest>
