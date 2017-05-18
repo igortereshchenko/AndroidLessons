@@ -20,6 +20,8 @@ android {
     sourceSets {
         main {
             res.srcDirs = [
+                    'src/main/res/layout/lesson_fragment',
+                    'src/main/res/layout/lesson_menu',
                     'src/main/res/layout/lesson_lists',
                     'src/main/res/layout/lesson_resources',
                     'src/main/res/layout/lesson_activity',

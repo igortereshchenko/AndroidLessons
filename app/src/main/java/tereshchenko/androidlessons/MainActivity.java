@@ -13,8 +13,10 @@ import android.widget.TextView;
 import tereshchenko.androidlessons.LessonActivity.ActivityCommunication.ActivityCommunication;
 import tereshchenko.androidlessons.LessonActivity.LessonActivity;
 import tereshchenko.androidlessons.LessonControls.LessonControls;
+import tereshchenko.androidlessons.LessonFragment.LessonFragment;
 import tereshchenko.androidlessons.LessonLayouts.LessonLayouts;
 import tereshchenko.androidlessons.LessonLists.LessonLists;
+import tereshchenko.androidlessons.LessonMenu.LessonMenu;
 import tereshchenko.androidlessons.LessonResources.ResourceLesson;
 
 public class MainActivity extends AppCompatActivity {
@@ -64,5 +66,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void btnLessonMenu(View sender){
+        Intent intent = new Intent(this, LessonMenu.class);
+        startActivity(intent);
+    }
 
+
+    public void btnLessonFragment(View sender){
+        Intent intent = new Intent(this, LessonFragment.class);
+        startActivity(intent);
+    }
 }

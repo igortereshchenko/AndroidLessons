@@ -17,11 +17,30 @@
             android:onClick="btnArrayAdapter"/>
 
         <Button
-            android:text="Открыть Custom rrayAdapter"
+            android:text="Открыть Custom ArrayAdapter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="btnCustomArrayAdapter"/>
 
+        <Button
+            android:text="Открыть Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnSpinner"/>
+
+
+        <Button
+            android:text="Открыть AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnAutoCompleteTextView"/>
+
+
+        <Button
+            android:text="Открыть Grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnGrid"/>
 
     </LinearLayout>
 

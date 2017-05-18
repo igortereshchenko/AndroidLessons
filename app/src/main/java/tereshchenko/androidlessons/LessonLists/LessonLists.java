@@ -8,6 +8,7 @@ import android.view.View;
 import tereshchenko.androidlessons.Lesson;
 import tereshchenko.androidlessons.LessonControls.TextViewControl;
 import tereshchenko.androidlessons.LessonLists.CustomArrayAdapter.LessonCutomArrayAdapter;
+import tereshchenko.androidlessons.LessonLists.LessonGrid.LessonGrid;
 import tereshchenko.androidlessons.R;
 
 public class LessonLists extends AppCompatActivity {
@@ -32,6 +33,33 @@ public class LessonLists extends AppCompatActivity {
     public void btnCustomArrayAdapter(View sender){
 
         Intent intent = new Intent(this, LessonCutomArrayAdapter.class);
+
+        startActivity(intent);
+
+    }
+
+
+    public void btnSpinner(View sender){
+
+        Intent intent = new Intent(this, LessonSpinner.class);
+
+        startActivity(intent);
+
+    }
+
+
+    public void btnAutoCompleteTextView(View sender){
+
+        Intent intent = new Intent(this, LessonAutoCompleteTextView.class);
+
+        startActivity(intent);
+
+    }
+
+
+    public void btnGrid(View sender){
+
+        Intent intent = new Intent(this, LessonGrid.class);
 
         startActivity(intent);
 

@@ -117,6 +117,43 @@
                 android:onClick="btnLessonLists"/>
 
 
+
+            <!-- Урок 5. Menu -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Урок 5. Меню"
+                android:textSize="34sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Меню в приложениях представляет класс android.view.Menu, и каждая activity ассоциируется с объектом этого типа. Объект android.view.Menu может включать различное количество элементов, а те в свою очередь могут хранить подэлементы."
+                android:textSize="14sp" />
+            <Button
+                android:text="Открыть"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnLessonMenu"/>
+
+
+            <!-- Урок 6. Fragment -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Урок 6. Fragment"
+                android:textSize="34sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Меню в приложениях представляет класс android.view.Menu, и каждая activity ассоциируется с объектом этого типа. Объект android.view.Menu может включать различное количество элементов, а те в свою очередь могут хранить подэлементы."
+                android:textSize="14sp" />
+            <Button
+                android:text="Открыть"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnLessonFragment"/>
+
+
         </LinearLayout>
 
     </ScrollView>

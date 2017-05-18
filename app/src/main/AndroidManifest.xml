@@ -42,7 +42,12 @@
         <activity android:name=".LessonControls.ImageViewControl" />
         <activity android:name=".LessonLists.LessonLists" />
         <activity android:name=".LessonLists.LessonArrayAdapter" />
-        <activity android:name=".LessonLists.CustomArrayAdapter.LessonCutomArrayAdapter"></activity>
+        <activity android:name=".LessonLists.CustomArrayAdapter.LessonCutomArrayAdapter" />
+        <activity android:name=".LessonLists.LessonSpinner" />
+        <activity android:name=".LessonLists.LessonAutoCompleteTextView" />
+        <activity android:name=".LessonLists.LessonGrid.LessonGrid" />
+        <activity android:name=".LessonMenu.LessonMenu" />
+        <activity android:name=".LessonFragment.LessonFragment"></activity>
     </application>
 
 </manifest>

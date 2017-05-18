@@ -13,18 +13,24 @@
 
         android:text="@string/prompt"
         android:textSize="@dimen/text_size"
-        android:background="@color/textViewColor"/>
+        android:background="@color/textViewColor"
+
+        style="@style/MyTextViewStyle"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:id="@+id/txtAuthor"/>
+        android:id="@+id/txtAuthor"
+
+       />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Кто автор?"
-        android:onClick="btnAuthor"/>
+        android:onClick="btnAuthor"
+
+        />
 
 </LinearLayout>
