@@ -1,10 +1,13 @@
 package tereshchenko.androidlessons.LessonFragment;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 
+import tereshchenko.androidlessons.LessonFragment.FragmentPage.LessonFragmentPage;
 import tereshchenko.androidlessons.R;
 
 public class LessonFragment extends AppCompatActivity implements FirstFragment.OnFirstFragmentListener,SecondFragment.OnSecondFragmentListener {
@@ -43,4 +46,12 @@ public class LessonFragment extends AppCompatActivity implements FirstFragment.O
             edit.setText(info);
         }
     }
+
+
+    public  void OpenCustom(View sender){
+
+        Intent intent = new Intent(this,LessonFragmentPage.class);
+        startActivity(intent);
+    }
+
 }

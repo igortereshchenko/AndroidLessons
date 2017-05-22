@@ -1,6 +1,7 @@
 package tereshchenko.androidlessons.LessonFragment;
 
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -14,6 +15,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import tereshchenko.androidlessons.LessonActivity.ActivityCommunication.ActivityCommunication;
+import tereshchenko.androidlessons.LessonFragment.FragmentPage.LessonFragmentPage;
 import tereshchenko.androidlessons.R;
 
 /**
@@ -21,7 +24,7 @@ import tereshchenko.androidlessons.R;
  */
 public class AsyncTaskFragment extends Fragment {
 
-    int[] integers=null;
+    int[] integers = null;
     ProgressBar indicatorBar;
     TextView statusView;
 
@@ -33,12 +36,12 @@ public class AsyncTaskFragment extends Fragment {
 
 
         integers = new int[100];
-        for(int i=0;i<100;i++) {
+        for (int i = 0; i < 100; i++) {
             integers[i] = i + 1;
         }
         indicatorBar = (ProgressBar) view.findViewById(R.id.progressIndicator);
         statusView = (TextView) view.findViewById(R.id.txtStatusView);
-        Button btnFetch = (Button)view.findViewById(R.id.btnProgress);
+        Button btnFetch = (Button) view.findViewById(R.id.btnProgress);
         btnFetch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,27 +62,25 @@ public class AsyncTaskFragment extends Fragment {
     class ProgressTask extends AsyncTask<Void, Integer, Void> {
         @Override
         protected Void doInBackground(Void... unused) {
-            for (int i = 0; i<integers.length;i++) {
+            for (int i = 0; i < integers.length; i++) {
 
                 publishProgress(i);
                 SystemClock.sleep(400);
             }
             return null;
         }
+
         @Override
         protected void onProgressUpdate(Integer... items) {
-            indicatorBar.setProgress(items[0]+1);
-            statusView.setText("Статус: " + String.valueOf(items[0]+1));
+            indicatorBar.setProgress(items[0] + 1);
+            statusView.setText("Статус: " + String.valueOf(items[0] + 1));
         }
+
         @Override
         protected void onPostExecute(Void unused) {
             Toast.makeText(getActivity(), "Задача завершена", Toast.LENGTH_SHORT)
                     .show();
         }
     }
-
-
-
-
 
 }
