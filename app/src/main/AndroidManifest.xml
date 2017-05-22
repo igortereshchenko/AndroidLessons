@@ -2,6 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tereshchenko.androidlessons">
 
+    <permission
+        android:name="info.android.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="info.android.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -47,7 +59,11 @@
         <activity android:name=".LessonLists.LessonAutoCompleteTextView" />
         <activity android:name=".LessonLists.LessonGrid.LessonGrid" />
         <activity android:name=".LessonMenu.LessonMenu" />
-        <activity android:name=".LessonFragment.LessonFragment"></activity>
+        <activity android:name=".LessonFragment.LessonFragment" />
+        <activity android:name=".LessonWeb.LessonWeb" />
+        <activity android:name=".LessonDB.LessonDB" />
+        <activity android:name=".LessonDB.User" />
+        <activity android:name=".LessonFragment.FragmentPage.LessonFragmentPage"></activity>
     </application>
 
 </manifest>

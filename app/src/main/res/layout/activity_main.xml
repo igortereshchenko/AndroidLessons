@@ -154,6 +154,43 @@
                 android:onClick="btnLessonFragment"/>
 
 
+
+            <!-- Урок 7. WebView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Урок 7. WebView"
+                android:textSize="34sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WebView представляет простейший элемент для рендеринга html-кода, базирующийся на движке WebKit. Благодаря этому мы можем использовать WebView как примитивный веб-браузер, просматривая через него контент из сети интернет. "
+                android:textSize="14sp" />
+            <Button
+                android:text="Открыть"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnLessonWeb"/>
+
+
+            <!-- Урок 8. Db -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Урок 8. Db"
+                android:textSize="34sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp" />
+            <Button
+                android:text="Открыть"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnLessonDb"/>
+
+
         </LinearLayout>
 
     </ScrollView>

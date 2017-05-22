@@ -20,6 +20,8 @@ android {
     sourceSets {
         main {
             res.srcDirs = [
+                    'src/main/res/layout/lesson_db',
+                    'src/main/res/layout/lesson_web',
                     'src/main/res/layout/lesson_fragment',
                     'src/main/res/layout/lesson_menu',
                     'src/main/res/layout/lesson_lists',
@@ -41,7 +43,6 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:25.1.0'
